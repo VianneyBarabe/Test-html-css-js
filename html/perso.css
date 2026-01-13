@@ -81,3 +81,14 @@ header h1 {
     background: plum;
     color: black;
 }
+
+.media {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    justify-content: center;
+}
+
+.media p {
+    margin-top: -500px;
+}
