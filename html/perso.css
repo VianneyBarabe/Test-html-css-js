@@ -1,0 +1,83 @@
+body {
+    background-color: lightskyblue;
+    text-align: center;
+}
+
+header {
+    background-color: pink;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    flex: 1;
+    color: purple;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 50px;
+}
+
+.rainbow {
+    background: linear-gradient(90deg,
+            red,
+            orange,
+            yellow,
+            green,
+            cyan,
+            blue,
+            violet,
+            red);
+    background-size: 400%;
+    animation: rainbow 5s linear infinite;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 100%;
+    }
+}
+
+.zone-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card:hover {
+    background-color: plum;
+}
+
+.zone-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* carte */
+.card {
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    transition: background 0.3s;
+}
+
+.zone-link[aria-current="page"] .card {
+    background: plum;
+    color: black;
+}
