@@ -8,6 +8,8 @@
 body {
     background-color: lightskyblue;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -21,6 +23,10 @@ nav {
 nav a {
     flex: 1;
     color: purple;
+}
+
+footer a {
+    color: lightskyblue;
 }
 
 header h1 {
@@ -99,4 +105,25 @@ header h1 {
 
 .media p {
     margin-top: -500px;
+}
+
+button {
+    border: none;
+  outline: none;
+  background: none;
+}
+
+button img {
+      width: 200px;
+    height: auto;
+}
+
+.animate {
+  animation: clickAnim 0.3s ease;
+}
+
+@keyframes clickAnim {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(0.9); }
+  100% { transform: scale(1); }
 }

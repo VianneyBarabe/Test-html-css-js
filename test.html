@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Un Site Bien Gez</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+<div class="app">
+  <header class="top">
+    <div class="brand">
+      <div class="logo"></div>
+      <div>
+        <h1>Mine Clicker</h1>
+        <p class="sub">Tape, achète des upgrades, deviens riche.</p>
+      </div>
+    </div>
+
+    <div class="hud">
+      <div class="hud-card">
+        <div class="hud-label">Compteur</div>
+        <div class="hud-value"><span id="counter">0</span></div>
+      </div>
+      <div class="hud-card">
+        <div class="hud-label">Auto niveau</div>
+        <div class="hud-value"><span id="autoLevel">0</span></div>
+      </div>
+      <div class="hud-card">
+        <div class="hud-label">Vitesse</div>
+        <div class="hud-value"><span id="autoSpeed">1000</span> ms</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="middle">
+    <section class="left">
+      <div class="panel">
+        <h2>Mine</h2>
+        <p class="hint">Clique pour gagner +1</p>
+
+        <button type="button" name="addcount" class="mine-btn" aria-label="Miner">
+          <img src="Mine.png" alt="Mine">
+          <span class="mine-glow"></span>
+        </button>
+
+        <div class="big-counter">
+          <span class="big-label">Total</span>
+          <span class="big-value" id="bigCounter">0</span>
+        </div>
+
+        <div class="mini-row">
+          <div class="chip">Astuce: survole le bouton 😄</div>
+          <div class="chip" id="statusChip">Auto: OFF</div>
+        </div>
+      </div>
+    </section>
+
+    <aside class="right">
+      <div class="panel">
+        <h2>Shop</h2>
+        <p class="hint">Achète des upgrades avec ton compteur</p>
+
+        <div class="shop-list">
+          <div class="shop-item">
+            <div class="shop-text">
+              <div class="shop-title">Auto clicker</div>
+              <div class="shop-desc">+1 automatique, accélère à chaque achat</div>
+            </div>
+            <div class="shop-actions">
+              <div class="price"><span id="autoPrice">100</span> 🪙</div>
+              <button type="button" name="auto" class="btn" disabled>Acheter</button>
+            </div>
+          </div>
+
+          <div class="shop-item">
+            <div class="shop-text">
+              <div class="shop-title">Skin / FX</div>
+              <div class="shop-desc">Placeholder (tu pourras mettre des effets ici)</div>
+            </div>
+            <div class="shop-actions">
+              <div class="price">—</div>
+              <button type="button" class="btn ghost" disabled>Bientôt</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="shop-footer">
+          <button class="btn danger" id="resetBtn" type="button">Reset</button>
+          <button class="btn ghost" id="saveBtn" type="button">Save</button>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="bottom">
+    <div class="bottom-inner">
+      <div class="log-title">Log</div>
+      <div class="log" id="log">
+        Bienvenue 👋 Clique sur la mine pour commencer.
+      </div>
+    </div>
+  </footer>
+</div>
+<script src="test.js"></script>
+</body>
+
+</html>
